@@ -1,7 +1,7 @@
 # Planning Algorithm
 
 The agorithm is aimed at planning the motion of a drone swarm for the following class of tasks.
-![](Example-environment.png "An example problem environment")
+![](Example-environment.PNG "An example problem environment")
 
 This task is reduced to a graph and the algorithm performs optimal traversal of the following graph
 ![](Ill.png)
