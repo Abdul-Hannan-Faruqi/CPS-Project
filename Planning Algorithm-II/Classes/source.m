@@ -17,13 +17,20 @@ classdef source
             obj.remainder = mod(obj.packages,4)
         end
         
-        function [obj,packs] = get_pack(obj)
+        function [obj,packs, c] = get_pack(obj)
             if obj.packages >= 4
                 packs = 4;
                 obj.packages = obj.packages - 4;
+                c = obj.cost;
             else
-                packs = obj.packages;
-                obj.packages = 0;
+                if 1 <= obj.packages
+                    packs = obj.packages;
+                    obj.packages = 0;
+                    c = obj.cost;
+                else
+                    packs = 0;
+                    c = 0;
+                end
             end
         end
         
