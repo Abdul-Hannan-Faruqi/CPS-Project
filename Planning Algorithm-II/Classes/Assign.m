@@ -31,9 +31,11 @@ while max(load)>0
     disp(load);
 end
 
-for i = 1:m
-    if i>n
+for i = 1:max(m,n)
+    if i>n && i<=m
         disp(sources(i));
+    elseif i>m && i<=n
+        disp(drones(i));
     else
         disp(drones(i));
         disp(sources(i));
