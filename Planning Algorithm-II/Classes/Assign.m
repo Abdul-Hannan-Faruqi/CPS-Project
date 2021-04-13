@@ -1,9 +1,9 @@
-function assignment = Assign(m, run_times, int_time, n)
+function assignment = Assign(m, run_times, packages, int_time, n)
 
 drones(1:n) = drone;
 load = zeros(1,m);
-packages = [12,7,15,8];
-assignment = [1 2 3];
+% packages = [12,7,15,8,9];
+assignment = (1:1:n);
 for i=1:m
     sources(i) = source(packages(i),run_times(i));
 end
