@@ -35,7 +35,7 @@ Below is an illustration of the types of problem targeted by us.
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
 12.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization.
-13. In https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/Path%20Planning location, Open the path_optimal.m to get 2D Simulation of without intersource test case and open energyOptimal.m to get 2D Simulation of with Intersource test case.
+13. In location, Open the [path_optimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/path_optimal.m) to get 2D Simulation of without intersource test case and open [energyOptimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/energyOptimal.m) to get 2D Simulation of with Intersource test case.
 14.  For the example problem, read the camera orientation matrix `Cam.csv` into the variable `cam` with the following command
 
         cam = readmatrix('Cam.csv');
@@ -43,6 +43,6 @@ Below is an illustration of the types of problem targeted by us.
 15. Next run `Cam_gen.m`
 16. Finally open `PathVisualization.slx` and run the simulation.
 It will display the 3-D simulation with the preset camera angles.
-17. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) (having drone 1 waypoints), path.m(having drone 2 waypoints) and trajectory.m (having Drone 3 waypoints). Run those file removing the function and again insert it, as these waypoints needs to get stored in variables in the base workspace.
-18. These variables are linked to the 3D world Editor 'Disaster_Prob.x3d' file via Simulink Model 'SimulinkDroneWorld.slx'.
+17. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trace.m) (having drone 1 waypoints), [path.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/path.m) (having drone 2 waypoints) and [trajectory.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trajectory.m) (having Drone 3 waypoints). Run those file removing the function and again insert it, as these waypoints needs to get stored in variables in the base workspace.
+18. These variables are linked to the 3D world Editor [Disaster_Prob.x3d](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/Disaster_Prob.x3d) file via Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx).
 19. Drone.slx Simulink file consists of Simulink model prepared considering the Drone Dynamics, Controller, Gust factor, and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. So, Performance and Motion Tunning is performed.
