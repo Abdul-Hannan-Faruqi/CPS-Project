@@ -35,7 +35,7 @@ Below is an illustration of the types of problem targeted by us.
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
 12.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization.
-13. In location, Open the [path_optimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/path_optimal.m) to get 2D Simulation of without intersource test case and open [energyOptimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/energyOptimal.m) to get 2D Simulation of with Intersource test case.
+13. Open the [path_optimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/path_optimal.m) to get 2D Simulation of without intersource test case and open [energyOptimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/energyOptimal.m) to get 2D Simulation of with Intersource test case.
 14.  For the example problem, read the camera orientation matrix `Cam.csv` into the variable `cam` with the following command
 
         cam = readmatrix('Cam.csv');
