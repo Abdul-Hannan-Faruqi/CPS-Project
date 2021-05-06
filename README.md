@@ -5,7 +5,7 @@ This project aims to provide a platform for design, control, and analysis of aut
 
 
 1. Download or clone this repository.
-2. Generate an image (single colour) of the problem environment or use the image 'Surrounding2.png' in the Path Planning folder
+2. Generate an image (single colour) of the problem environment or use the image [Surrounding2.png](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/Surrounding2.png)in the Path Planning folder
 3. Go to Path Planning folder and open `prmcalc.m`
 4. Set the grid resolution for the image and the location of the origin. Define the start array (starting position of each drone - one per row) and goal locations for individual goals. Define variables for each drone to source path.
     > If using the default problem defined in 'Surrounding2.png', just run `prmcalc.m`
@@ -20,4 +20,20 @@ This project aims to provide a platform for design, control, and analysis of aut
   * `int_time` - inter-source travel time
   * `n` - Number of drones
 10. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the i<sup>th</sup> iteration
+11. Now, concatenate paths into single array based on the results of the assignment.
+    > E.g. If the first column of assignment is
+    > 
+    >       1
+    >       2
+    >       .
+    >       .
+    >       .
+    > 
+    > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
+12.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization.
+13.  For the example problem, read the camera orientation matrix `Cam.csv` into the variable `cam` with the following command
+    > cam = readmatrix('Cam.csv');
+14. Next run `Cam_gen.m`
+15. Finally open `PathVisualization.slx` and run the simulation.
+It will display the 3-D simulation with the preset camera angles.
  
