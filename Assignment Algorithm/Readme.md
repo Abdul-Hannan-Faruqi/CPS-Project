@@ -1,9 +1,6 @@
 # Assignment Algorithm
 
-The agorithm is aimed at planning the motion of a drone swarm for tasks of the following type.
-![](Example-environment.PNG "An example problem environment")
-
-This task is reduced to a graph and the algorithm performs optimal traversal of the following graph
+The agorithm reduces the problem of task assignment to a graph and performs optimal traversal of the following graph
 ![](Ill.png)
 
 subject to the rules:
