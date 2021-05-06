@@ -19,5 +19,5 @@ This project aims to provide a platform for design, control, and analysis of aut
   * `packages` - Number of packages at each source
   * `int_time` - inter-source travel time
   * `n` - Number of drones
-10. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the `i<sup>th</sup>` iteration
+10. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the i<sup>th</sup> iteration
  
