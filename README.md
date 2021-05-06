@@ -42,5 +42,6 @@ Below is an illustration of the types of problem targeted by us.
 15. Next run `Cam_gen.m`
 16. Finally open `PathVisualization.slx` and run the simulation.
 It will display the 3-D simulation with the preset camera angles.
-17. There are 3 files namely, trace.m (having drone 1 waypoints) path.m(having drone 2 waypoints) and trajectory.m (having Drone 3 waypoints). Run those file removing the function and again interst it, as these waypoints needs to get sotred in variables in base workspace.
-18. These variables are linked to the 3D world Editor 'Disaster_Prob.x3d' file via Simulink Model 'SimulinkDroneWorld.slx'
+17. There are 3 files present in (https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) in the Path Planning folder namely, trace.m (having drone 1 waypoints) path.m(having drone 2 waypoints) and trajectory.m (having Drone 3 waypoints). Run those file removing the function and again interst it, as these waypoints needs to get sotred in variables in base workspace.
+18. These variables are linked to the 3D world Editor 'Disaster_Prob.x3d' file via Simulink Model 'SimulinkDroneWorld.slx'.
+19. Drone.slx Simulink file consists of Simulink model prepared considering the Drone Dynamics, Controller, Gust factor, and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. So, Performance and Motion Tunning is performed.
