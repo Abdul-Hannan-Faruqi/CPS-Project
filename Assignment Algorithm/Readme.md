@@ -1,4 +1,4 @@
-# Planning Algorithm
+# Assignment Algorithm
 
 The agorithm is aimed at planning the motion of a drone swarm for tasks of the following type.
 ![](Example-environment.PNG "An example problem environment")
