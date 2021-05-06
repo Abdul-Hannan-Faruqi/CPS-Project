@@ -24,7 +24,7 @@ Below is an illustration of the types of problem targeted by us.
   * `int_time` - inter-source travel time
   * `n` - Number of drones
 9. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the i<sup>th</sup> iteration
-    > For the standard test case 
+    > For the example problem 
     >  * run [path_optimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/path_optimal.m) to get a 2-D visualization of the path without inter-source travel
     >  * run [energyOptimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/energyOptimal.m) to get a 2-D visualization of the path with inter-source travel.
 10. Now, concatenate paths into single array based on the results of the assignment.
@@ -37,7 +37,7 @@ Below is an illustration of the types of problem targeted by us.
     >       .
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
-11.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization.
+11.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel)
 12.  For the example problem, read the camera orientation matrix `Cam.csv` into the variable `cam` with the following command
 
         cam = readmatrix('Cam.csv');
@@ -45,8 +45,8 @@ Below is an illustration of the types of problem targeted by us.
 13. Next run `Cam_gen.m`
 14. Finally open `PathVisualization.slx` and run the simulation.
 It will display the 3-D simulation with the preset camera angles.
-15. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trace.m) (having drone 1 waypoints), [path.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/path.m) (having drone 2 waypoints) and [trajectory.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trajectory.m) (having Drone 3 waypoints). Run those file removing the function and again insert it, as these waypoints needs to get stored in variables in the base workspace.
-16. These variables are linked to the 3D world Editor [Disaster_Prob.x3d](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/Disaster_Prob.x3d) file via Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx).
+15. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trace.m) (having drone 1 waypoints), [path.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/path.m) (having drone 2 waypoints) and [trajectory.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trajectory.m) (having drone 3 waypoints). Run these files to generate trajectories without inter-source travel
+16. These time series trajectory data are linked to the 3D world Editor [Disaster_Prob.x3d](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/Disaster_Prob.x3d) file via Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx)
 
 ### Drone dynamics Model
 `Drone.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor, and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
