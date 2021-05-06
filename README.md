@@ -4,7 +4,7 @@ Course project for Autonomous Cyber-Physical Systems (CS659A) - Group 14
 This project aims to provide a platform for design, control, and analysis of autonomous drone swarms. It takes a problem environment and task as inputs, calculates the path for each drone in the swarm, and performs optimal multi-agent task assignment. It allows 3-D visualization of the mission in Simulink 3-D animation. Currently, there are separate programs for each component but we plan we integrate everything into a single MATLAB app.   
 
 Below is an illustration of the types of problem targeted by us.
-![]('Assignment Algorithm/Example-environment.PNG' "An example problem environment")
+![]('Assignment Algorithm'/Example-environment.PNG "An example problem environment")
 
 1. Download or clone this repository.
 2. Generate an image (single colour) of the problem environment or use the image [Surrounding2.png](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/Surrounding2.png) in the Path Planning folder
