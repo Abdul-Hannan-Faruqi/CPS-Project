@@ -1,0 +1,9 @@
+traj1.time = t;
+traj2.time = t;
+traj3.time = t;
+traj1.signals.values = [dr1(2,:)',dr1(3,:)',dr1(1,:)'];
+traj2.signals.values = [dr2(2,:)',dr2(3,:)',dr2(1,:)'];
+traj3.signals.values = [dr3(2,:)',dr3(3,:)',dr3(1,:)'];
+traj1.signals.dimensions = 3;
+traj2.signals.dimensions = 3;
+traj3.signals.dimensions = 3;
