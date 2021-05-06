@@ -32,8 +32,10 @@ This project aims to provide a platform for design, control, and analysis of aut
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
 12.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization.
 13.  For the example problem, read the camera orientation matrix `Cam.csv` into the variable `cam` with the following command
-    > cam = readmatrix('Cam.csv');
-14. Next run `Cam_gen.m`
-15. Finally open `PathVisualization.slx` and run the simulation.
+
+        cam = readmatrix('Cam.csv');
+        
+15. Next run `Cam_gen.m`
+16. Finally open `PathVisualization.slx` and run the simulation.
 It will display the 3-D simulation with the preset camera angles.
  
