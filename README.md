@@ -5,7 +5,9 @@ This project aims to provide a platform for design, control, and analysis of aut
 
 Below is an illustration of the types of problem targeted by us.
 ![](Assignment%20Algorithm/Example-environment.PNG "An example problem environment")
+***
 
+## Instructions for use
 1. Download or clone this repository.
 2. Generate an image (single colour) of the problem environment or use the image [Surrounding2.png](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/Surrounding2.png) in the Path Planning folder
 3. Go to Path Planning folder and open `prmcalc.m`
