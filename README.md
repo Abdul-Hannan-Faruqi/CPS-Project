@@ -17,7 +17,7 @@ Below is an illustration of the types of problem targeted by us.
 5. This will save the path for each drone to each source in the defined variables.
 6. Now take the mean path length (steps to goal) for each source and create an array of source travel times, say `run_times`
 7. Define an array (`packages`) for the number of packcages at each source
-8. Go to planning algorithm and call the 'Assign' function defined in `Assign.m` with the following arguments:
+8. Go to Assignment Algorithm/Classes and call the 'Assign' function defined in `Assign.m` with the following arguments:
   * `m` - Number of sources
   * `run_times` - travel time to each source
   * `packages` - Number of packages at each source
