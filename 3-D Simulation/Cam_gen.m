@@ -1,3 +1,4 @@
+cam = readmatrix('Cam.csv');
 Camera.time = t;
 Camera.signals.values = [cam(2,:)',cam(3,:)',cam(1,:)'];
 Camera.signals.dimensions = 3;
