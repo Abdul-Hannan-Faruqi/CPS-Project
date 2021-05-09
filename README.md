@@ -56,23 +56,15 @@ Below is an illustration of the types of problem targeted by us.
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
     > 
-    > The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files and can be read directly by following the next step.
-11.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel)  
-    <blockquote>
-    For the example problem, uncomment the top lines to read the path data saved in the `.csv` files<br><br>
-    ![](Illustrations/Traj.gif)
-    </blockquote>
-12. Next run `Cam_gen.m`
-    > Again uncomment the top line to read the preset camera orientation data from the `.csv` file
-    > 
-    > ![](Illustrations/Cam.gif)
-    > 
-13. Finally open `PathVisualization.slx` and run the simulation. It will display the 3-D simulation for intersource Travel case with the preset camera viewpoints. Here, you will have the option of 4 viewpoints.
+    > The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files in the [3-D Simulation folder](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), and can be read directly by following the next step.
+11.  Run `TrajGen.m` in 3-D Simulation folder. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel). It reads drone path data from the corresponding `.csv` file
+12. Next run `Cam_gen.m` which reads camera orientations from `Cam.csv` and generates corresponding time series data
+13. Finally open `PathVisualization.slx` and run the simulation. It will display the 3-D simulation for intersource travel case with the preset camera viewpoints. Here, you will have the option of 4 viewpoints.
     > The viewpoints appear as untitled_1, 2, 3, 4. The first and default viewpoint corresponds to our camera positions (`View`) that we input to the model and the next three correspond to the 3 drones - these viewpoints move with the drone. You can change the viewpoint to observe the motion of the individual drones (using the toggle arrows at the bottom) as shown below. The current viewpoint name appears at the top left 
     > 
     > ![](Illustrations/World.gif)
 14. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trace.m) (having drone 1 waypoints), [path.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/path.m) (having drone 2 waypoints) and [trajectory.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trajectory.m) (having drone 3 waypoints). Run these files to generate trajectories for without inter-source travel case.
-15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource Travel case.
+15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case.
     ![](Illustrations/DRONE-MOTION-WITHOUT-INTERSOURCE.gif)
     
 ### Drone dynamics Model
