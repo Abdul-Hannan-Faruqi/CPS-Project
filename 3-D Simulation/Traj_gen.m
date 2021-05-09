@@ -1,3 +1,7 @@
+dr1 = readmatrix('dr1.csv');
+dr2 = readmatrix('dr2.csv');
+dr3 = readmatrix('dr3.csv');
+t = 0:1:length(dr1)-1;
 traj1.time = t;
 traj2.time = t;
 traj3.time = t;
