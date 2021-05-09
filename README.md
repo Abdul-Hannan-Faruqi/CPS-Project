@@ -72,7 +72,7 @@ The following steps require **Simulink 3D Animation** Add-on in MATLAB
 15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case without automatic camera feed.
     ![](Illustrations/DRONE-MOTION-WITHOUT-INTERSOURCE.gif)
 16. Finally Open the Simulink Model [SimulinkDroneWorld_automatic.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld_automatic.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case with automatic camera feed.
-  ![](Illustrations/DRONE MOTION WITHOUT INTERSOURCE GIF.avi)  
+  [DRONE MOTION WITHOUT INTERSOURCE GIF.avi](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Illustrations/DRONE%20MOTION%20WITHOUT%20INTERSOURCE%20GIF.avi)
 ***
 ### Drone dynamics Model
 `DroneModel.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor according to DJI Mavic Drone Specifications and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
