@@ -17,7 +17,7 @@ Below is an illustration of the types of problem targeted by us.
 
 ## Instructions for use
 1. Download or clone this repository.
-2. Generate an image (single colour) of the problem environment or use the image [Surrounding2.png](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/Surrounding2.png) in the Path Planning folder
+2. Generate an image (single colour) of the problem environment or use the image [Surrounding2.png](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/Surrounding2.png) in the Path Planning folder. Coloured aerial photographs with almost uniform ambient background will also work ([example](Illustrations/Seg.png)). For more general cases, use Matlab Image Processing Toolbox to pre-process the image
 3. Go to Path Planning folder and open `prmcalc.m`
 4. Set the grid resolution for the image and the location of the origin. Define the start array (starting position of each drone - one per row) and goal locations for individual goals. Define variables for each drone to source path.
     > If using the default problem defined in 'Surrounding2.png', just run `prmcalc.m`
@@ -56,9 +56,13 @@ Below is an illustration of the types of problem targeted by us.
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
     > 
-    > The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files in the [3-D Simulation folder](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), and can be read directly by following the next step.
+    > **The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files in the [3-D Simulation folder](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), and can be used directly by following the next steps.**
 11.  Run `TrajGen.m` in 3-D Simulation folder. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel). It reads drone path data from the corresponding `.csv` file
 12. Next run `Cam_gen.m` which reads camera orientations from `Cam.csv` and generates corresponding time series data
+
+*** 
+The following steps require **Simulink 3D Animation** Add-on in MATLAB  
+
 13. Finally open `PathVisualization.slx` and run the simulation. It will display the 3-D simulation for intersource travel case with the preset camera viewpoints. Here, you will have the option of 4 viewpoints.
     > The viewpoints appear as untitled_1, 2, 3, 4. The first and default viewpoint corresponds to our camera positions (`View`) that we input to the model and the next three correspond to the 3 drones - these viewpoints move with the drone. You can change the viewpoint to observe the motion of the individual drones (using the toggle arrows at the bottom) as shown below. The current viewpoint name appears at the top left 
     > 
@@ -67,5 +71,6 @@ Below is an illustration of the types of problem targeted by us.
 15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case.
     ![](Illustrations/DRONE-MOTION-WITHOUT-INTERSOURCE.gif)
     
+***
 ### Drone dynamics Model
 `DroneModel.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor according to DJI Mavic Drone Specifications and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
