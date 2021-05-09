@@ -55,7 +55,8 @@ Below is an illustration of the types of problem targeted by us.
     >       .
     > 
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
-    > The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` and can be read directly by following the next step.
+    > 
+    > The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files and can be read directly by following the next step.
 11.  With the drone paths defined as `dri`, run `TrajGen.m` in 3-D Simulation. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel)  
     <blockquote>
     For the example problem, uncomment the top lines to read the path data saved in the `.csv` files<br><br>
