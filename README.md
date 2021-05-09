@@ -67,7 +67,7 @@ Below is an illustration of the types of problem targeted by us.
     > 
     > ![](Illustrations/Cam.gif)
     > 
-13. Finally open `PathVisualization.slx` and run the simulation. It will display the 3-D simulation with the preset camera viewpoints. Here, you will have the option of 4 viewpoints.
+13. Finally open `PathVisualization.slx` and run the simulation. It will display the 3-D simulation for intersource Travel case with the preset camera viewpoints. Here, you will have the option of 4 viewpoints.
     > The viewpoints appear as untitled_1, 2, 3, 4. The first and default viewpoint corresponds to our camera positions (`View`) that we input to the model and the next three correspond to the 3 drones - these viewpoints move with the drone. You can change the viewpoint to observe the motion of the individual drones (using the toggle arrows at the bottom) as shown below. The current viewpoint name appears at the top left 
     > 
     > ![](Illustrations/World.gif)
