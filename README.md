@@ -25,7 +25,7 @@ Below is an illustration of the types of problem targeted by us.
 5. Run `prmcalc.m`. This will save the path for each drone to each source in the defined variables.
 6. Now take the mean path length (steps to goal) for each source and create an array of source travel times, say `run_times`
 7. Define an array (`packages`) for the number of packages at each source.
-8. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) consists of test case trace with `prmcalc.m` output for this test case.  
+8. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) ,which consists of test case trace with `prmcalc.m` output for this test case.  
 9. Go to Assignment Algorithm/Classes and call the 'Assign' function defined in `Assign.m` with the following arguments:
   * `m` - Number of sources
   * `run_times` - travel time to each source
