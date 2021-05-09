@@ -76,4 +76,4 @@ Below is an illustration of the types of problem targeted by us.
     ![](Illustrations/DRONE-MOTION-WITHOUT-INTERSOURCE.gif)
     
 ### Drone dynamics Model
-`DroneModel.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor, and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
+`DroneModel.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor according to DJI Mavic Drone Specifications and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
