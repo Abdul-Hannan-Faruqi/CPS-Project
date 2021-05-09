@@ -74,6 +74,6 @@ Below is an illustration of the types of problem targeted by us.
 14. There are 3 files present in the Path Planning folder namely, [trace.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trace.m) (having drone 1 waypoints), [path.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/path.m) (having drone 2 waypoints) and [trajectory.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/trajectory.m) (having drone 3 waypoints). Run these files to generate trajectories for without inter-source travel case.
 15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource Travel case.
     > 
-    > ![](Illustrations/World.gif)
+    > ![](Illustrations/DRONE-MODEL-WITHOUT-INTERSOURCE.gif)
 ### Drone dynamics Model
 `DroneModel.slx` file contains a Simulink model prepared considering the Drone Dynamics, Controller, Gust factor, and there are scopes attached to Linear Position, Angular Position, Linear velocity, Angular Velocity, Linear Acceleration, Angular Acceleration, Current and PID Controller. It can be used for parameter tuning and performance monitoring.
