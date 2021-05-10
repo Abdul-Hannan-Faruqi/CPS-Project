@@ -57,7 +57,7 @@ Below is an illustration of the types of problem targeted by us.
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
     > 
     > **The final concatenated trajectories (based on the assignment result), for individual drones in the example problem, are saved in `.csv` files in the [3-D Simulation folder](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), and can be used directly by following the next steps.**
-11. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), which consists of test case trace with `prmcalc.m` concatenated output of all drones for this test case.
+11. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) to view the example test case trace. It contains concatenated output of `prmcalc.m` of all drones for the example problem.
 12.  Run `TrajGen.m` in 3-D Simulation folder. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel). It reads drone path data from the corresponding `.csv` file
 13. Next run `Cam_gen.m` which reads camera orientations from `Cam.csv` and generates corresponding time series data
 
