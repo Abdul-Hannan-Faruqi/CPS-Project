@@ -24,9 +24,8 @@ Below is an illustration of the types of problem targeted by us.
     > The path of drone `i` to sources N, S, E, W are saved as `pathNi`, `pathSi`, etc.
 5. Run `prmcalc.m`. This will save the path for each drone to each source in the defined variables.
 6. Now take the mean path length (steps to goal) for each source and create an array of source travel times, say `run_times`
-7. Define an array (`packages`) for the number of packages at each source.
-8. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) ,which consists of test case trace with `prmcalc.m` output for this test case.  
-9. Go to Assignment Algorithm/Classes and call the 'Assign' function defined in `Assign.m` with the following arguments:
+7. Define an array (`packages`) for the number of packages at each source.  
+8. Go to Assignment Algorithm/Classes and call the 'Assign' function defined in `Assign.m` with the following arguments:
   * `m` - Number of sources
   * `run_times` - travel time to each source
   * `packages` - Number of packages at each source
@@ -37,7 +36,7 @@ Below is an illustration of the types of problem targeted by us.
   > 
   > ![](Illustrations/Assign.png)
   > 
-10. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the i<sup>th</sup> iteration  
+9. This will return an array `assignment` having `n` columns where each column holds the source number assigned to the corresponding drone in the i<sup>th</sup> iteration  
     > 
     > ![](Illustrations/Assign-ans.PNG)
     > 
@@ -46,7 +45,7 @@ Below is an illustration of the types of problem targeted by us.
     > For the example problem 
     >  * run [path_optimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/path_optimal.m) to get a 2-D visualization of the path without inter-source travel
     >  * run [energyOptimal.m](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/Path%20Planning/energyOptimal.m) to get a 2-D visualization of the path with inter-source travel.
-11. Now, concatenate paths into single array based on the results of the assignment.
+10. Now, concatenate paths into single array based on the results of the assignment.
     > E.g. If the first column of assignment is
     > 
     >       1
@@ -58,6 +57,7 @@ Below is an illustration of the types of problem targeted by us.
     > Drone 1 goes to source 1 (say N) and then to source 2 (say E). Therefore, concatenate `pathN1` (forward travel), reverse of `pathN1` (return to site), `pathE1` (forward), and reverse of `pathE1` (return to site) to get the total path into a single array (`dr1`)
     > 
     > **The final concatenated trajectories (based on the assignment result), for the example problem, are saved in `.csv` files in the [3-D Simulation folder](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation), and can be used directly by following the next steps.**
+11. Open [3D POINTS](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/tree/main/3-D%20Simulation) ,which consists of test case trace with `prmcalc.m` output for this test case.
 12.  Run `TrajGen.m` in 3-D Simulation folder. This will generate the trajectories as time series to be used in the Simulink model for path visualization (with inter-source travel). It reads drone path data from the corresponding `.csv` file
 13. Next run `Cam_gen.m` which reads camera orientations from `Cam.csv` and generates corresponding time series data
 
