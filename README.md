@@ -72,7 +72,7 @@ The following steps require **Simulink 3D Animation** Add-on in MATLAB
 ](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/Camera_rotation.m) Camera automatic orientation feed on Drone Trajectory. Run these files to generate trajectories for without inter-source travel case.
 15. Finally open the Simulink Model [SimulinkDroneWorld.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case without automatic camera feed.
     ![](Illustrations/DRONE-MOTION-WITHOUT-INTERSOURCE.gif)
-16. Finally Open the Simulink Model [SimulinkDroneWorld_automatic.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld_automatic.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case with automatic camera feed.
+16. Finally Open the Simulink Model [SimulinkDroneWorld_automatic.slx](https://github.com/Abdul-Hannan-Faruqi/CPS-Project/blob/main/3-D%20Simulation/SimulinkDroneWorld_automatic.slx) and run the simulation. It will display the 3-D simulation for without intersource travel case with automatic camera feed. Even in the automatic camera setting, user can change view with the help of mouse.
     > 
     > ![](Illustrations/WorldMotionGIF.gif) 
 ***
